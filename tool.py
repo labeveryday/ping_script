@@ -1,6 +1,7 @@
 """
 --------------------CHALLENGE--------------------
-Modify this Python file to only output the failed pings to Results.txt
+Modify this Python file to only output the failed
+ping resultsto Results.txt
 --------------------CHALLENGE--------------------
 """
 # import built-in os library
