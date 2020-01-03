@@ -1,7 +1,7 @@
 """
 --------------------CHALLENGE--------------------
 Modify this Python file to only output the failed
-ping resultsto Results.txt
+ping results to Results.txt
 --------------------CHALLENGE--------------------
 """
 # import built-in os library
