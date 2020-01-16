@@ -1,9 +1,3 @@
-"""
---------------------CHALLENGE--------------------
-Modify this Python file to only output the failed
-ping results to Results.txt
---------------------CHALLENGE--------------------
-"""
 # import built-in os library
 # https://docs.python.org/3/library/os.html
 
