@@ -2,11 +2,11 @@
 # https://github.com/ktbyers/netmiko
 
 from netmiko import ConnectHandler
-import netmiko
 import getpass
 import os
 import re
-import xlsxwriter 
+import xlsxwriter
+
 
 # Open file for saving ping results
 results_file = open("results.txt", "w")
@@ -35,7 +35,9 @@ device_type = 'cisco_ios'
 for ip in ip_list:
     response = os.popen(f"ping {ip} -n 1").read()
     if "Received = 1" and "Approximate" in response:
-        net_connect = ConnectHandler(ip=ip, username=username, password=password, device_type=device_type)
+        net_connect = ConnectHandler(ip=ip, username=username,
+                                     password=password,
+                                     device_type=device_type)
         print('\nPing successsful. Now connecting to: ', ip)
         running_config = net_connect.send_command('show run')
         hostname = net_connect.send_command('show run | in hostname')[9:]
